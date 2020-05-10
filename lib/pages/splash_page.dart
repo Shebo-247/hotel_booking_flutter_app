@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking_flutter_app/home_page.dart';
+import 'package:hotel_booking_flutter_app/pages/home_page.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -50,8 +50,9 @@ class _SplashPageState extends State<SplashPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: Colors.green[600]),
+                    borderRadius: BorderRadius.circular(25),
+                    color: Theme.of(context).primaryColor,
+                  ),
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20),
                     child: FlatButton(
